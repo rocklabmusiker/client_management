@@ -6,7 +6,8 @@ const Incomplete = () => {
     <div className="card">
     <div className="card-content">
       <h4><b>Incomplete</b></h4>
-      <IncomCardContent/> 
+      <IncomCardContent/>
+ 
       <IncomCardContent/>
       <IncomCardContent/>
       <IncomCardContent/>

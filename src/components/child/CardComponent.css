@@ -1,32 +1,60 @@
+/* Default styles (Mobile-first) */
 .card {
-  flex: 0 0 calc(20% - 16px); /* Five cards, minus margin */
-  height: 500px;
-
-  /* Modified from 'border: rounded' which is incorrect */
-  margin-right: 6px;
-  overflow-y: scroll; 
-  overflow-x: hidden; 
-  box-sizing: border-box;
-  background-color: #F2F4F7;
-}
-
-/* Styling the scrollbar for the .card */
-.card::-webkit-scrollbar {
-  width: 6px; 
+    flex: 0 0 calc(100% - 16px);  /* One card on small screens */
+    height: auto;
+    margin-right: 6px;
+    margin-bottom: 16px;  /* Margin bottom added for spacing between stacked cards */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #F2F4F7;
+  }
+  
+  .card-content {
+    padding: 5px;
+    max-width: 100%;
+  }
+  .card::-webkit-scrollbar {
+    width: 6px;
 }
 
 .card::-webkit-scrollbar-thumb {
-  background-color: #0071BE;
-  border-radius: 6px; 
+    background-color: #0071BE;
+    border-radius: 6px; 
 }
 
 .card::-webkit-scrollbar-track {
-  background-color: lightgrey;
+    background-color: lightgrey;
 }
 
-.card-content {
-  padding: 5px;
-  max-width: 100%; 
+  /* Responsive Styles */
   
+  /* Tablet (e.g., iPad in portrait) */
+  @media (min-width: 600px) and (max-width: 767px) {
+    .card {
+      flex: 0 0 calc(50% - 16px);  /* Two cards in a row */
+    }
+  }
   
-}
+  /* Tablet (e.g., iPad in landscape) and Small Desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .card {
+      flex: 0 0 calc(33.33% - 16px);  /* Three cards in a row */
+    }
+  }
+  
+  /* Medium Desktops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .card {
+      flex: 0 0 calc(25% - 16px);  /* Four cards in a row */
+    }
+  }
+  
+  /* Large Desktops */
+  @media (min-width: 1200px) {
+    .card {
+      flex: 0 0 calc(20% - 16px);  /* Five cards in a row */
+      height: 500px;  /* Original height restored for larger screens */
+    }
+  }
+  
