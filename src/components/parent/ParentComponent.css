@@ -1,0 +1,19 @@
+.parent-container {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden; /* Prevent vertical scroll here */
+  white-space: nowrap;
+  padding: 16px;
+  width: 100%;
+}
+
+/* Styling the horizontal scrollbar for .parent-container */
+.parent-container::-webkit-scrollbar {
+  height: 4px; 
+}
+
+.parent-container::-webkit-scrollbar-thumb {
+  background-color: #0071BE;
+  border-radius: 6px; 
+}
+

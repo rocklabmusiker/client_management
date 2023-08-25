@@ -1,0 +1,49 @@
+/* IncomCardContent.css */
+
+/* Card Styling */
+.incom-card-content {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* General Styling for content rows */
+.content-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+/* Styling for icon-containing sections */
+.icon-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Icon Styling */
+.content-row .icon-content svg {
+    font-size: 15px; /* Adjust this size if it's too large */
+    color: #555;
+    flex-shrink: 0;
+}
+
+/* General Text Styling */
+.content-row span {
+    color: #333;
+    font-size: 10px; /* Reduced the font size to 14px from 16px */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 270px; /* Reduced the width to give more space. Adjust accordingly */
+}
+
+/* Text styling specific to icons */
+.content-row .icon-content span {
+    font-weight: bold;
+}
