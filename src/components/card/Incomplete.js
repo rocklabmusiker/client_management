@@ -17,4 +17,4 @@ const Incomplete = () => {
   )
 }
 
-export default Incomplete
+export default Incomplete;

@@ -1,6 +1,6 @@
-import React from 'react'
-import '../child/CardComponent.css'
-import UnderReviewCard from './UnderReview'
+import React from 'react';
+import '../child/CardComponent.css';
+import UnderReviewCard from './UnderReview';
 const UnderReviewCardViews = () => {
   return (
     <div className="card">
@@ -12,4 +12,4 @@ const UnderReviewCardViews = () => {
   )
 }
 
-export default UnderReviewCardViews
+export default UnderReviewCardViews;

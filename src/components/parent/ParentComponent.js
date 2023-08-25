@@ -8,7 +8,6 @@ import UnderReviewCardViews from '../card/UnderReviewCardView';
 const ParentComponent = () => (
     <div className="parent-container">
       <Incomplete />
-
       <ToDoCard />
       <DointCard />
       <UnderReviewCardViews  />

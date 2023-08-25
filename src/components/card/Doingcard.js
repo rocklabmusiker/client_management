@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import '../child/CardComponent.css';
 import IncomCardContent from './IncomCardContent';
 const DointCard = () => {
@@ -16,4 +16,4 @@ const DointCard = () => {
   )
 }
 
-export default DointCard 
+export default DointCard ;

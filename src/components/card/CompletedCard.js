@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import '../child/CardComponent.css';
 import IncomCardContent from './IncomCardContent';
 const CompletedCard= () => {
@@ -13,7 +13,7 @@ const CompletedCard= () => {
      
     </div>
   </div>
-  )
+  );
 }
 
-export default CompletedCard
+export default CompletedCard;

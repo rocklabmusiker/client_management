@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import '../child/CardComponent.css';
 import IncomCardContent from './IncomCardContent';
 const ToDoCard = () => {
@@ -16,4 +16,4 @@ const ToDoCard = () => {
   )
 }
 
-export default ToDoCard
+export default ToDoCard;
